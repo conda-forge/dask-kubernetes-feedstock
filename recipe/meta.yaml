@@ -11,17 +11,17 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
-    - python
+    - python >=3.5
     - pip
   run:
-    - python
-    - dask-core
-    - distributed >=1.21.3
-    - python-kubernetes ==4
+    - python >=3.5
+    - dask-core >=0.19.0
+    - distributed >=1.22.0
+    - python-kubernetes >=9
 
 test:
   imports:
