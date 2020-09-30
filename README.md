@@ -5,7 +5,7 @@ Home: https://github.com/dask/dask-kubernetes
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Native Kubernetes integration for Dask
 
