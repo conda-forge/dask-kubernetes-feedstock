@@ -1,4 +1,4 @@
-{% set version = "2022.5.2" %}
+{% set version = "2022.7.0" %}
 
 package:
   name: dask-kubernetes
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/dask-kubernetes/dask-kubernetes-{{ version }}.tar.gz
-  sha256: deef6d6f5295f68b7907dd5e5ec50e4ca4c250c93eac8b382e486bb2f6c66575
+  sha256: de445a97ac7948daab3ac11063ef26d2f3cf879cb089bf7c750d712087aef33d
 
 build:
   number: 0
