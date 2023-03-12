@@ -1,11 +1,11 @@
-About dask-kubernetes
-=====================
+About dask-kubernetes-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dask-kubernetes-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/dask/dask-kubernetes
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/dask-kubernetes-feedstock/blob/main/LICENSE.txt)
 
 Summary: Native Kubernetes integration for Dask
 
