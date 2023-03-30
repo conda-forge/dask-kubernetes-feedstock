@@ -1,5 +1,5 @@
 {% set name = "dask-kubernetes" %}
-{% set version = "2023.3.1" %}
+{% set version = "2023.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dask-kubernetes-{{ version }}.tar.gz
-  sha256: 5e259c4cfc572e1143bb2427f08182c182f8d7172a96622165a17d8a5cf38fd1
+  sha256: 9cde91232fe03fe1d898bab751625142cd54e9b7bd8ef362ddbbf88566164549
 
 build:
   noarch: python
