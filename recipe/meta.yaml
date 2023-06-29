@@ -1,5 +1,5 @@
 {% set name = "dask-kubernetes" %}
-{% set version = "2023.3.2" %}
+{% set version = "2023.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dask-kubernetes-{{ version }}.tar.gz
-  sha256: 9cde91232fe03fe1d898bab751625142cd54e9b7bd8ef362ddbbf88566164549
+  sha256: 01c8cb0d4315b9d3dfae2032fb6a1c22190f4507648b13714879e3cbdb11235e
 
 build:
   noarch: python
@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
   run:
-    - python >=3.8
+    - python >=3.9
     - dask-core >=2022.08.1
     - distributed >=2022.08.1
     - python-kubernetes >=12.0.1
@@ -27,14 +27,17 @@ requirements:
     - kopf >=1.35.3
     - pykube-ng >=22.9.0
     - rich >=12.5.1
+    - kr8s ==0.6.0
 
 test:
   imports:
     - dask_kubernetes
-  commands:
-    - pip check
-  requires:
-    - pip
+  # Cannot use pip check b/c kr8s version is ill formed in the package.
+  # dask-kubernetes 2023.6.1 has requirement kr8s==0.6.0, but you have kr8s 0.0.0.post2+7801a48.
+  # commands:
+  #   - pip check
+  # requires:
+  #   - pip
 
 about:
   home: https://github.com/dask/dask-kubernetes
