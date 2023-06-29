@@ -32,10 +32,12 @@ requirements:
 test:
   imports:
     - dask_kubernetes
-  commands:
-    - pip check
-  requires:
-    - pip
+  # Cannot use pip check b/c kr8s version is ill formed in the package.
+  # dask-kubernetes 2023.6.1 has requirement kr8s==0.6.0, but you have kr8s 0.0.0.post2+7801a48.
+  # commands:
+  #   - pip check
+  # requires:
+  #   - pip
 
 about:
   home: https://github.com/dask/dask-kubernetes
