@@ -1,5 +1,5 @@
 {% set name = "dask-kubernetes" %}
-{% set version = "2023.8.0" %}
+{% set version = "2023.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dask-kubernetes-{{ version }}.tar.gz
-  sha256: bcedcf62834cf176309335028f6fbd0a8772f250d853ae6351af5275b0a307ec
+  sha256: 2bc13b025b0706284b02ff48906462d81d2fa5f81b016a47468b57c3c593460d
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     - kopf >=1.35.3
     - pykube-ng >=22.9.0
     - rich >=12.5.1
-    - kr8s ==0.8.12
+    - kr8s ==0.8.15
 
 test:
   imports:
