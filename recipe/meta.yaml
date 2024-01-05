@@ -27,7 +27,7 @@ requirements:
     - kopf >=1.35.3
     - pykube-ng >=22.9.0
     - rich >=12.5.1
-    - kr8s >=0.9.0
+    - kr8s ==0.9.0
 
 test:
   imports:
