@@ -1,5 +1,5 @@
 {% set name = "dask-kubernetes" %}
-{% set version = "2024.3.0" %}
+{% set version = "2024.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dask-kubernetes-{{ version }}.tar.gz
-  sha256: a95db7ffd3c1ce16a8ad95b16bbc9a0a01b3a862629be54339a3788c703c9769
+  sha256: bbee62f6eaec491b3a7070bb39f7c93acdb94bfd242928b78291a940fa94464f
 
 build:
   noarch: python
@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python >=3.9,<3.12
+    - python >=3.9
     - pip
   run:
-    - python >=3.9,<3.12
+    - python >=3.9
     - dask-core >=2022.08.1
     - distributed >=2022.08.1
     - python-kubernetes >=12.0.1
