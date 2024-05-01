@@ -18,6 +18,8 @@ requirements:
   host:
     - python >=3.9
     - pip
+    - hatchling
+    - hatch-vcs
   run:
     - python >=3.9
     - dask-core >=2022.08.1
